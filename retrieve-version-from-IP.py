@@ -7,8 +7,8 @@ model_pattern = re.compile(r'Model Number (.+) : (.*)')
 serial_no_pattern = re.compile(r'Processor board ID (\S+)')
 uptime_pattern = re.compile(r'(.+) uptime is (.*)')
 
-#askedUsername=input("Enter your username : \n")
-#askedPassword=input("Enter your password : \n")
+askedUsername=input("Enter your username : \n")
+askedPassword=input("Enter your password : \n")
 
 listOfIP="IP.txt"
 readHostsFile=open(listOfIP,'r')
