@@ -1,6 +1,8 @@
 import paramiko
 import time
 from getpass import getpass
+import pandas as pa
+
 import re
 
 model_pattern = re.compile(r'Model Number (.+) : (.*)')
