@@ -1,6 +1,5 @@
 import paramiko
 import time
-from getpass import getpass
 import pandas as pa
 import re
 
