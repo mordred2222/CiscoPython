@@ -1,0 +1,10 @@
+en 
+Switch#sh ru int Fa0/8
+Building configuration...
+
+Current configuration : 33 bytes
+!
+interface FastEthernet0/8
+end
+
+Switch#

@@ -2,6 +2,7 @@ import paramiko
 import time
 import pandas as pa
 import re
+import os 
 
 model_pattern = re.compile(r'Model Number (.+) : (.*)')
 serial_no_pattern = re.compile(r'Processor board ID (\S+)')
@@ -43,6 +44,7 @@ def cisco_parse_version(host,username,password):
         print('Host Name '.ljust(18)+': '+uptime_match.group(1))
         print('Device Uptime '.ljust(18)+': '+uptime_match.group(2))
 
+        isExist = os.path.exists("./"+hostname)
         
         SESSION.close()
 
@@ -61,5 +63,6 @@ for eachHost in readHosts:
     count +=1
     #print (eachHost.strip())
     resultat=cisco_parse_version(eachHost.strip(),askedUsername,askedPassword)
+    
     file2.writelines(";".join(resultat))
 file2.close()

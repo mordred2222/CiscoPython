@@ -1,0 +1,10 @@
+en 
+Switch#sh ru int Gi0/1
+Building configuration...
+
+Current configuration : 36 bytes
+!
+interface GigabitEthernet0/1
+end
+
+Switch#
